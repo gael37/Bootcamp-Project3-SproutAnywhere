@@ -1,0 +1,1201 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Baloo Thambi 2';
+}
+
+// Variables
+$primary: #467A43; //green
+$secondary: #F3F5F8; //background color
+$accent: #9CB42F; //lighter green accent color
+$header-font: 'Baloo Bhai 2';
+$body-font: 'Baloo Thambi 2';
+
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: $body-font;
+}
+
+.sprout-logo {
+  width: 220px;
+}
+
+// **** nav bar **** //
+
+.navbar-links {
+  font-family: $body-font;
+
+  >.nav-link {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.nav-link {
+  font-size: 20px;
+  margin: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-link-acc {
+  font-weight: lighter;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.account-icon {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin-left: 1rem;
+}
+
+.nav-plants-drop-ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(241, 234, 234, 0.8);
+  z-index: 20;
+}
+
+.nav-drop-plants {
+  position: relative;
+  margin: 10px 0 10px 25px;
+  font-family: $body-font;
+  font-size: 20px;
+  font-weight: bold;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+
+.nav-drop-plants:first-child {
+  margin-top: 20px;
+}
+
+.nav-drop-plants:last-child {
+  margin-bottom: 20px;
+}
+
+.nav-drop-ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(241, 234, 234, 0.95);
+  z-index: 20;
+}
+
+.nav-drop-link {
+  margin: 10px 0 10px 25px;
+  font-family: $body-font;
+  font-size: 20px;
+  font-weight: bold;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.nav-drop-link:first-child {
+  margin-top: 20px;
+}
+
+// .nav-drop-link:last-child {
+//   margin-bottom: 20px;
+// }
+
+// Navbar search feature
+.search-dropdown-container {
+  top: 60px;
+  right: 5px;
+  position: absolute;
+  background-color: rgba(241, 234, 234, 0.8);
+  width: 375px;
+  z-index: 10;
+
+  .search-list-input {
+    width: 100%;
+    border-bottom: 2px solid $primary;
+    padding-left: 10px;
+  }
+
+  .search-list {
+    border-bottom: 2px solid $primary;
+    padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-img {
+    height: 48px;
+    width: 48px;
+
+  }
+
+  .search-title {
+    font-family: $header-font;
+    color: $primary;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    flex-basis: 75%;
+  }
+
+}
+
+
+// **** plants **** //
+
+// *** PLANT SINGLE ***
+
+.plant-single {
+  font-family: $body-font;
+  margin-top: 20px;
+
+  h1 {
+    font-family: $header-font;
+    font-size: 1.4rem;
+  }
+
+  .plant-name {
+    text-align: center;
+    border-bottom: 1px solid #9CB42F;
+  }
+
+  .plant-info-guide-title-container {
+    border-bottom: 1px solid #9CB42F;
+  }
+
+  .plant-info-guide-title {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 10px auto 0 auto;
+  }
+
+  .chakra-container {
+    max-width: 700px;
+  }
+
+  .plant-img {
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .plant-main-description {
+    margin-bottom: 20px;
+  }
+
+  .amazon-btn-div {
+    justify-content: center;
+  }
+
+  .plant-info-guide-title-container {
+    margin-top: 20px;
+  }
+}
+
+.plant-info-container {
+  flex-direction: column;
+
+  .plant-info {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+      width: 60px;
+      margin: 0 auto;
+    }
+
+    .plant-info-subtitle {
+      font-weight: bolder;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Blogs All index page
+.blogs-all-index {
+  margin-top: 20px;
+
+  .blog-index-card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+
+    &:hover {
+      border: 1px solid $accent;
+      box-shadow: 5px 5px 5px #818181;
+    }
+  }
+
+  .blog-index-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary;
+    font-family: $header-font;
+    margin-top: 5px;
+    padding: 0 5px;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .blog-index-card-description {
+    padding: 0 5px;
+  }
+
+  .blog-index-card-img {
+    max-height: 300px;
+  }
+}
+
+// Blog category index page
+.blog-index-filter-box {
+  text-align: center;
+
+  select {
+    text-align: right;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+}
+
+.blog-index-filter-p {
+  font-size: 1.3rem;
+  color: $primary;
+}
+
+.filter-blog-dropdown {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+// .blog-index-filter-selector {
+//   font-size: 1.5rem;
+// }
+
+// Centers the following pages
+.succulents-blog-index,
+.single-blog,
+.blogs-all-index {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-index-cards {
+  .blog-index-card-title {
+    font-size: 1.4rem;
+    color: $primary;
+    font-family: $header-font;
+    margin-top: 5px;
+  }
+
+  .blog-card-p {
+    font-size: 0.8rem;
+    color: #98999a;
+  }
+
+  .blog-read-more {
+    background-color: $primary;
+    color: $secondary;
+  }
+
+  .description-card-p {
+    margin-top: 5px;
+  }
+
+  // .blog-card-btn {
+  //   color: $accent;
+  //   font-size: 1.1rem;
+  //   &:hover {
+  //     color: $primary;
+  //     font-size: 1.2rem;
+  //   }
+  // }
+}
+
+// Single blog page
+.single-blog {
+  h1 {
+    font-size: 2rem;
+    font-family: $header-font;
+    color: $primary;
+    text-align: center;
+  }
+
+  .blog-single-created-by {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-height: 800px;
+    margin: 0 auto;
+  }
+
+  .blog-article {
+    font-size: 1.1rem;
+  }
+
+  .btn-green {
+    background-color: $primary;
+    color: $secondary;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-imgs {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin: 5px 0px 5px 5px;
+  }
+}
+
+// *** PLANT FORM PAGE ***
+
+.plant-add-page {
+  .plant-add-form {
+    form {
+      margin-top: 30px;
+    }
+  }
+
+  .chakra-input,
+  .chakra-select,
+  .plant-add-location-checkbox {
+    margin-bottom: 10px;
+
+    label {
+      margin-left: 3px;
+      margin-right: 15px;
+    }
+  }
+
+  .btn-green {
+    background-color: $primary;
+    color: $secondary;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+}
+
+// Blog form page styling
+.blog-form-page,
+.plant-add-page {
+  display: flex;
+  justify-content: center;
+
+  .blog-form-input,
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid $accent;
+    border-radius: 5px;
+    font-family: $body-font;
+  }
+
+  .btn-green {
+    background-color: $primary;
+    color: $secondary;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  .blog-form {
+    margin-top: 20px;
+
+    .required {
+      color: red;
+    }
+
+    label {
+      font-family: $header-font;
+      font-size: 1.2rem;
+    }
+  }
+
+  // Drop Zone styling
+  .thumbsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 16px;
+
+    .thumb {
+      display: inline-flex;
+      border-radius: 2px;
+      border: 1px solid #eaeaea;
+      margin-bottom: 8px;
+      margin-right: 8px;
+      width: 100px;
+      height: 100px;
+      padding: 4px;
+    }
+
+    .thumb-img {
+      width: auto;
+      max-height: 150px;
+    }
+  }
+
+  // editor on blog forms
+  .rdw-editor-wrapper {
+    border: 1px solid $accent;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .blog-form-select {
+    border-color: $accent;
+    background-color: $primary;
+  }
+}
+
+.blog-form-title,
+.plant-add-title {
+  font-family: $header-font;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 1.5rem;
+    padding-right: 3rem;
+  }
+}
+
+
+
+// **** login, register **** //
+
+
+
+.login-page-wrapper,
+.register-page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  align-items: top;
+  justify-content: center;
+  padding-top: 100px;
+  // background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2021/03/foliage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register-page-wrapper {
+  padding-top: 20px;
+}
+
+// Form Page
+.form-page {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+
+  .btn-main {
+    background-color: darken(#467A43, 15%);
+    color: white;
+    width: 33%;
+    border-radius: 5px;
+    height: 2em;
+    margin-top: 1em;
+
+    &:hover {
+      background-color: darken(#467A43, 20%);
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #467A43;
+  }
+
+  form {
+    background: $secondary;
+    padding: 40px;
+    border-radius: 18px;
+    width: 30%;
+    display: inline-block;
+    border: 2px solid $primary;
+    box-shadow: 5px 5px #467A43;
+
+    label {
+      font-size: 0.9rem;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 15px;
+      border: none;
+      padding: 5px;
+    }
+
+    small {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+
+// **** profile page **** //
+
+
+
+.profile-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #467A43;
+
+  span {
+    color: black;
+    font-size: 1.1em;
+    font-weight: normal;
+  }
+
+  h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+}
+
+.profile-page-wrapper {
+  margin-left: 20px;
+
+  #span-username {
+    margin-left: 10px;
+  }
+
+  #span-email {
+    margin-left: 10px;
+  }
+
+
+}
+
+.profile-title {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+.plant-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 15px;
+}
+
+.plant-card-image {
+  height: 20vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin: 10px;
+  border: 7px solid $primary;
+  border-radius: 10px;
+}
+
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 15px;
+  align-items: center;
+}
+
+.profile-card-image {
+  height: 20vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 2px solid $primary;
+  border-radius: 10px;
+  box-shadow: 5px 5px #467A43;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .zoom:hover {
+    transform: scale(1.5);
+  }
+}
+
+
+.profile-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buffer {
+  padding: 0 10px;
+}
+
+.buffer h2 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.no-blogs-yet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.no-plants-yet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-post {
+  border: 1px solid $primary;
+  background-color: #467A43;
+  color: white;
+  margin-left: 50px;
+  border-radius: 5px;
+  margin-bottom: 0;
+  padding: 2px 7px;
+}
+
+.btn-edit {
+  border: 1px solid gold;
+  background-color: gold;
+  color: black;
+  margin-left: 50px;
+  border-radius: 5px;
+  padding: 2px 7px;
+  height: 50%;
+
+}
+
+.profile-main-categories {
+  display: flex;
+  align-items: center;
+}
+
+.btn-new {
+  height: 32px;
+}
+
+.profile-link-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-details {
+  margin-left: 10px;
+  color: $primary;
+  font-weight: bold;
+}
+
+// *** CHECKBOX *** 
+
+.plants-filter-container {
+  min-width: 195px;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 10px;
+  ;
+
+  .plants-filter-title {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .filters-type,
+  .filters-location,
+  .filters-sunlight,
+  .filters-height {
+    flex-direction: column;
+
+    label {
+      margin-left: 5px;
+    }
+  }
+
+  .filters-beginner,
+  .filters-safe {
+    margin-top: 10px;
+    margin-left: 15px;
+
+    label {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plants-filter-container {
+    width: 90vw;
+  }
+
+  .plants-index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+
+    .chakra-container {
+      transform: translateY(30px);
+    }
+  }
+}
+
+
+// *** PLANTS INDEX *** 
+
+.plants-index {
+  display: flex;
+  margin-top: 2.5%;
+
+  .no-results {
+    margin: 30px auto;
+    padding-top: 100px;
+    font-size: 30px;
+  }
+
+  .chakra-container {
+    margin: 5px auto;
+  }
+}
+
+.plants-index-cards {
+  margin-bottom: 40px;
+
+  .chakra-heading {
+    text-align: center;
+    margin-top: 10px;
+    font-family: $body-font;
+  }
+
+  .chakra-image {
+    transition: transform .5s;
+
+    &:hover {
+      transform: scale(1.1)
+    }
+  }
+}
+
+
+// *** HOMEPAGE ***
+
+.home-main {
+  background-image: url(../assets/monstera-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px);
+
+  .empty {
+    height: 1px;
+  }
+
+  .home-container {
+    flex-direction: column;
+    // transform: translate(10vw, 20vh);
+    font-size: 2vw;
+    font-weight: bolder;
+    // margin-top: 50px;
+  }
+
+  .home-forms-container {
+    flex-direction: column;
+    height: calc(100vh - 60px);
+  }
+
+  .home-title-container {
+    flex-direction: column;
+    margin-left: 140px;
+    margin-top: 110px;
+  }
+
+  .home-title {
+    margin-bottom: 20px;
+    font-size: 2.5vw;
+  }
+
+  .home-action-container {
+    margin-bottom: 20px;
+  }
+
+  .home-start-message {
+    margin-top: 20px;
+  }
+
+  select {
+    margin-left: 3px;
+    border-bottom: 2px solid $primary;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2vw;
+    font-weight: bolder;
+    color: $primary;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    margin-top: 30px;
+    background-color: lighten($primary, 10%);
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  .home-select-container {
+    margin-left: 140px;
+  }
+
+  .home-location-container,
+  .home-sunlight-container,
+  .home-height-container,
+  .home-beginner-container,
+  .home-toxic-container,
+  .home-category-container,
+  .home-tag-container {
+    align-items: center;
+  }
+
+  .chakra-container {
+    font-size: 25px;
+    margin: 0 auto;
+    // margin-left: 10%;
+    // margin-top: 30vh;
+    margin-bottom: 200px;
+
+    .chakra-text {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .chakra-heading {
+      text-align: center;
+      margin-top: 10px;
+      font-family: $body-font;
+    }
+
+    .chakra-image {
+      transition: transform .5s;
+
+      &:hover {
+        transform: scale(1.1)
+      }
+    }
+  }
+
+  .home-results-message {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: $primary;
+    font-size: 2rem;
+  }
+}
+
+
+// **** MEDIA QUERIES **** //
+
+
+@media only screen and (max-width: 600px) {
+  .profile-page-wrapper {
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bolder;
+    }
+
+    .profile-title {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-top: 5px;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+
+  .login-page-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    align-items: top;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  // Form Page
+  .form-page {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+
+    .btn-main {
+      background-color: darken(#467A43, 15%);
+      color: white;
+      width: 33%;
+      border-radius: 5px;
+      height: 2em;
+      margin-top: 1em;
+
+      &:hover {
+        background-color: darken(#467A43, 20%);
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #467A43;
+    }
+
+    form {
+      background: $secondary;
+      padding: 40px;
+      border-radius: 18px;
+      width: 70%;
+      display: inline-block;
+      border: 2px solid $primary;
+
+      label {
+        font-size: 0.9rem;
+      }
+
+      input {
+        width: 100%;
+        margin-bottom: 15px;
+        border: none;
+        padding: 5px;
+      }
+
+      small {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .about-us-flex {
+    width: 80vw;
+    margin-right: 0;
+    font-size: 0.7rem;
+  }
+}
+
+
+
+// **** ABOUT US **** //
+
+
+.special-margin {
+  margin-left: 62px;
+}
+
+.about-us-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5em;
+  list-style: none;
+  align-items: left;
+  margin-top: 70px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  height: 50vh;
+  font-weight: bold;
+
+  h3 {
+    text-decoration: underline;
+    margin-bottom: 30px;
+  }
+}
+
+.about-us-flex {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-start;
+
+}
+
+.fa-github {
+  margin-left: 50px;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+  margin-left: 50px;
+  margin-right: 0;
+}
+
+#loksze-links {
+  margin-right: 12px;
+}
+
+#gael-links {
+  margin-right: 8px;
+}
+
+
+// **** NOT FOUND PAGE **** //
+
+
+
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 5em;
+  background-image: url(https://images.unsplash.com/photo-1470058869958-2a77ade41c02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8anVuZ2xlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  opacity: 0.7;
+  padding-top: 100px;
+}
+
+
+
+// **** COMMENTS **** //
+
+
+
+.review-flex {
+  margin-top: 10px;
+}
+
+.review-flex span {
+  color: #467A43;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.review-info {
+  text-align: left;
+  border-top: 1px solid $accent;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.input-review-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  input {
+    border: 0.5px solid grey;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
+}
+
+#review-date {
+  // font-style: italic;
+  color: $primary;
+  font-size: 0.8em;
+  // margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.review-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  // margin-left: 20px;
+}
+
+#review-text {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+
+}
+
+.review-section {
+  text-align: center;
+  color: #467A43;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.amazon-btn {
+  align-items: center;
+}
