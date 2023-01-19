@@ -50,8 +50,7 @@ Be deployed online
 
 # Planning
 
-```diff
-- Day 1
+<ins>Day 1:</ins>
 
 We started by brainstorming each one's ideas/suggestions about the theme of our application. We agreed on building a website about plants that would be a platform to both:
 visualise and post blogs 
