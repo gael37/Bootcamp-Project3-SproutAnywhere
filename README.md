@@ -22,21 +22,21 @@ https://github.com/lokszechung/sprout-anywhere.git
 
 # Technologies Used
 
-HTML
-Node.js
-JavaScript
-React.js
-Sass
-Bootstrap
-Chakra UI
-Axios
-Express
-VScode
-Figma
-MongoDB
-Mongoose
-Cloudinary
--bcrypt
+- HTML
+- Node.js
+- JavaScript
+- React.js
+- Sass
+- Bootstrap
+- Chakra UI
+- Axios
+- Express
+- VScode
+- Figma
+- MongoDB
+- Mongoose
+- Cloudinary
+- bcrypt
 
 # Brief
 Build a full stack application
