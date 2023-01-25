@@ -306,9 +306,11 @@ You can see the ‘Any comments?’ section created below at the bottom of the s
 
 # Challenges
 
-The first challenge I faced was using Git properly. It was the first time for me working with several people on the same project with a file sharing system. It took me a while to get used to it, thankfully we practised committing and merging beforehand as it would have been stressful to do that for the first time in the middle of the project.
-The second challenge was to manage errors when coding the user functionalities as many things could go wrong (passwords not matching, empty fields, token not valid etc). When I proceeded to the test on the ‘edit profile’ functionality, I was surprised at first to see the server crashing when the passwords was not matching the password confirmation, I had to search what error handling was missing and I noticed that it is important to face every scenario in the code, using conditional logic, to have a solid fallback and make sure the user is not getting a bit lost.
-Finally, the review system was the biggest challenge, I couldn’t figure out what to send to the endpoint, so I had to follow the line of the process of the request-response circuit to finally find that the data in the request body should just be the text (the required field) and then our controller simply pushes that object in the reviews array.
+- The first challenge I faced was using Git properly. It was the first time for me working with several people on the same project with a file sharing system. It took me a while to get used to it, thankfully we practised committing and merging beforehand as it would have been stressful to do that for the first time in the middle of the project.
+
+- The second challenge was to manage errors when coding the user functionalities as many things could go wrong (passwords not matching, empty fields, token not valid etc). When I proceeded to the test on the ‘edit profile’ functionality, I was surprised at first to see the server crashing when the passwords was not matching the password confirmation, I had to search what error handling was missing and I noticed that it is important to face every scenario in the code, using conditional logic, to have a solid fallback and make sure the user is not getting a bit lost.
+
+- Finally, the review system was the biggest challenge, I couldn’t figure out what to send to the endpoint, so I had to follow the line of the process of the request-response circuit to finally find that the data in the request body should just be the text (the required field) and then our controller simply pushes that object in the reviews array.
 
 # Wins
 
