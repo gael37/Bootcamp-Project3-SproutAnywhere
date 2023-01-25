@@ -4,7 +4,7 @@ On week 8 of General Assembly’s Software Engineering bootcamp, we were assigne
 
 # Deployment link
 
-gael-p4-sprout.herokuapp.com
+https://gael-duchesne-sprout-anywhere.herokuapp.com/
 
 # Getting Started/Code Installation
 
