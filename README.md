@@ -8,13 +8,11 @@ https://gael-duchesne-sprout-anywhere.herokuapp.com/
 
 # Getting Started/Code Installation
 
-The project is hosted on GitHub you can find the link below:
-
-github.com/gael37/project4-ga-sprout.git
+To run the application locally, open the project in your code editor, split the terminal, on one side in the root run 'npm run serve' to start the local server. On the other side, change directory into the client folder and run 'npm run start' which starts the development server. The application should open in your browser.
 
 # Timeframe & Working Team
 
-The timeframe for the completion of the project was one week. And we worked in groups of 3. Below is the link to my partner’s GitHub repositories:
+The timeframe for the completion of the project was one week. And we worked in groups of 3. Below are the links to my partner’s GitHub repositories:
 
 Shawn Fladager:
 https://github.com/sfladager/sproutanywhereblog-SEIp3
@@ -26,8 +24,8 @@ https://github.com/lokszechung/sprout-anywhere.git
 
 HTML
 Node.js
-Javascript
-React
+JavaScript
+React.js
 Sass
 Bootstrap
 Chakra UI
