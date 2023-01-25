@@ -314,11 +314,11 @@ Finally, the review system was the biggest challenge, I couldn’t figure out wh
 
 There are at least 3 big wins from that project:
 
--The biggest win for me is working as a team of 3 and managing to find my place and understanding how to interact in an efficient manner with my teammates. It was new to me and a bit scary at first because we all had our own ambitions and personal preferences for that project, but I was able to express my opinions quite well and I dared admitting when I was not really fancying someone else’s idea for example. I realised that it is important to communicate early, and even when you think you can’t help, actually you can, as sometimes your teammates could just be stuck on something you already bumped into. I found it really satisfying the way we split the tasks to make sure we worked as efficiently as we could on our own in what we were confident working on, and seeing the project getting more complex at each merge was quite exciting.
+- The biggest win for me is working as a team of 3 and managing to find my place and understanding how to interact in an efficient manner with my teammates. It was new to me and a bit scary at first because we all had our own ambitions and personal preferences for that project, but I was able to express my opinions quite well and I dared admitting when I was not really fancying someone else’s idea for example. I realised that it is important to communicate early, and even when you think you can’t help, actually you can, as sometimes your teammates could just be stuck on something you already bumped into. I found it really satisfying the way we split the tasks to make sure we worked as efficiently as we could on our own in what we were confident working on, and seeing the project getting more complex at each merge was quite exciting.
 
--I reviewed a lot of concepts for that project and I’m happy having figured out some points that I stumbled into such as the embedded review schema and the referenced relationships. I also got to review the authentication and the manipulation of the token which is a point on which I struggled a bit in class, but now feel confident on.
+- I reviewed a lot of concepts for that project and I’m happy having figured out some points that I stumbled into such as the embedded review schema and the referenced relationships. I also got to review the authentication and the manipulation of the token which is a point on which I struggled a bit in class, but now feel confident on.
 
--Also concerning CSS I’m getting more confident and I learn a bit more everyday, especially during these projects.
+- Also concerning CSS I’m getting more confident and I learn a bit more everyday, especially during these projects.
 
 # Key learnings/takeaways:
 
